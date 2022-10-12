@@ -4,7 +4,11 @@ module.exports = {
     './src/**/*.tsx', /* todos arquivos que terminem com .tsx */
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: 'Inter, sans-serif'
+      },
+    },
   },
   plugins: [],
 }
