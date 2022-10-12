@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Text, TextProps } from './Text'
+import { Heading, HeadingProps } from './Heading'
 
 export default { /*cria uma 'categoria' no storybook*/
-  title: 'Components/Text',/*categoria/subcategoria*/
-  component: Text, /*recebe text, que vem de Text.tsx*/
+  title: 'Components/Heading',/*categoria/subcategoria*/
+  component: Heading, /*recebe text, que vem de Text.tsx*/
   args:{
-    children: 'Lorem Ipsum',
+    children: 'Title Lorem Ipsum',
     size: 'md',
   },
   argTypes: {
@@ -19,24 +19,24 @@ export default { /*cria uma 'categoria' no storybook*/
 
 } as Meta<TextProps>
 
-export const Default: StoryObj<TextProps> = {} /*variação*/
+export const Default: StoryObj<HeadingProps> = {} /*variação*/
 
-export const Small: StoryObj<TextProps> = {
+export const Small: StoryObj<HeadingProps> = {
   args:{
     size: 'sm'
   }
 } /*variação*/
 
-export const Large: StoryObj<TextProps> = {
+export const Large: StoryObj<HeadingProps> = {
   args:{
     size: 'lg'
   }
 } /*variação*/
 
-export const CustomComponent: StoryObj<TextProps> = {
+export const CustomComponent: StoryObj<HeadingProps> = {
   args:{
     asChild: true, 
-    children: <p>Text with p</p>
+    children: <h1>Heading with h1</h1>
   },
   argTypes:{
     children:{
