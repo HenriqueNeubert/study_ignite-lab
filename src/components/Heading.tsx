@@ -17,10 +17,10 @@ export function Heading({ size = 'md', children, asChild }: HeadingProps) /*rece
     <Comp className={clsx(
       'text-gray-100 font-bold font-sans', /*default*/
       {
-        'Heading-lg' : size == 'sm',
-        'Heading-xl' : size == 'md',
-        'Heading-2xl' : size == 'lg',
-      }
+        'text-lg' : size == 'sm',
+        'text-xl' : size == 'md',
+        'text-2xl' : size == 'lg',
+      } 
     )}    
       /*{children}  = imprimi Heading*/
     >
