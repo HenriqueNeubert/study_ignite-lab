@@ -7,3 +7,5 @@
 
 #### Commands
   - npm run dev
+
+# aula - 2 - 20min ( https://app.rocketseat.com.br/event/ignite-lab-04/reactjs/aula-02 )
