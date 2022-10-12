@@ -1,3 +1,4 @@
+import { ReactNode } from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { clsx } from 'clsx'; /*add a opção de verificação e estipular default*/
 
