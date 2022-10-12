@@ -17,7 +17,7 @@ export default { /*cria uma 'categoria' no storybook*/
     }
   }
 
-} as Meta<TextProps>
+} as Meta<HeadingProps>
 
 export const Default: StoryObj<HeadingProps> = {} /*variação*/
 
