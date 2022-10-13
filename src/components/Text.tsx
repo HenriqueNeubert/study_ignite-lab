@@ -6,10 +6,11 @@ export interface TextProps { /*tipos de tamanho para os TEXTOS*/
   size?: 'sm' | 'md' | 'lg'; /*size? = opcional*/
   children : ReactNode; /* texto que receberá */ 
   asChild?: boolean; /*tag*/
+  className?: string; 
 }
 
 /*default = md*/
-export function Text({ size = 'md', children, asChild }: TextProps) /*recebe o size*/
+export function Text({ size = 'md', children, asChild, className }: TextProps) /*recebe o size*/
 {
   /*se tiver asChild, usa asChild, se não usa span*/
   const Comp = asChild ? Slot : 'span'; 
@@ -21,7 +22,8 @@ export function Text({ size = 'md', children, asChild }: TextProps) /*recebe o s
         'text-xs' : size == 'sm',
         'text-sm' : size == 'md',
         'text-md' : size == 'lg',
-      }
+      },
+      className,
     )}    
       /*{children}  = imprimi texto*/
     >

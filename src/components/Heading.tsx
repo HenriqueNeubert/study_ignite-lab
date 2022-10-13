@@ -6,10 +6,11 @@ export interface HeadingProps { /*tipos de tamanho para os HeadingOS*/
   size?: 'sm' | 'md' | 'lg'; /*size? = opcional*/
   children : ReactNode; /* Headingo que receberá */ 
   asChild?: boolean; /*tag*/
+  className?: string; 
 }
 
 /*default = md*/
-export function Heading({ size = 'md', children, asChild }: HeadingProps) /*recebe o size*/
+export function Heading({ size = 'md', children, asChild, className }: HeadingProps) /*recebe o size*/
 {
   /*se tiver asChild, usa asChild, se não usa span*/
   const Comp = asChild ? Slot : 'h2'; 
@@ -21,7 +22,8 @@ export function Heading({ size = 'md', children, asChild }: HeadingProps) /*rece
         'text-lg' : size == 'sm',
         'text-xl' : size == 'md',
         'text-2xl' : size == 'lg',
-      } 
+      },
+      className 
     )}    
       /*{children}  = imprimi Heading*/
     >
